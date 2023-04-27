@@ -1,0 +1,153 @@
+body{
+    background-image: url('images/background-image.avif');
+    background-repeat: no-repeat;
+    background-color: #E5E7EB;
+    margin-top: 0%;
+}
+.text{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 150px;
+}
+
+.header{
+    width: 675px;
+    height: max-content;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    gap: auto;
+}
+.Logo{
+    display: inline-flex;
+    background-color: black;
+    opacity: 0.6;
+    width: 680px;
+}
+.matter{
+    font-size: 30px;
+    border: 1px solid yellowgreen;
+    background-color: #E5E7EB;
+    padding: 30px 0px;
+}
+.footer{
+    color: aquamarine;
+    margin-top: 60%;
+    padding-left: 5%;
+    position: relative;
+}
+.logo{
+    margin-left: 15%;
+    position: relative;
+}
+.form{
+    background-color: rgb(255, 255, 255);
+    opacity: 0.9;
+    margin-right: auto;
+    padding: auto 0px auto 0px;
+    gap:10px;
+    flex: 1;
+}
+table{
+    box-shadow: 0px 5px 0px 0px rgb(64, 64, 64,0.4);
+}
+td>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+tr{
+    display: flex;
+    gap: 60px;
+    float: left;
+    padding-left: 0%;
+}
+input{
+    height: 30px;
+    width: 250px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+.phone-number>div{
+    display: flex;
+}
+.phone-number>div select{
+    width: 1px;
+}
+#user_password:focus,#confirm_user_password:focus{
+    border: 5px solid blue;
+}
+#user_password:valid,#confirm_user_password:valid{
+    border: 5px solid green;
+}
+button{
+    background-color: #596D48;
+    border: none;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-size: xx-large;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.signup{
+    background-color: #E5E7EB;
+}
+.login{
+    background-color: #E5E7EB;
+    border: 1px solid #E5E7EB;
+}
+.login>p{
+    padding-left: 40px;
+}
+@media screen and (min-width:1350px){
+    body{
+        display: flex;
+    }
+    .header{
+        margin-top: 35%;
+    }
+    .form{
+        margin-top: 5%;
+    }
+    
+}
+@media screen and (max-width:1349px){
+    .form{
+        opacity: 1;
+    }
+}
+@media screen and (max-width:660px){
+    .text{
+        font-size: 100px;
+        text-align: center;
+    }
+    .header{
+        width: auto;
+        display: flex;
+        align-content: center;
+        
+    }
+    .Logo{
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .matter{
+        font-size: 15px;
+    }
+    .footer{
+        width: min-content;
+        margin-top: 0%;
+    }
+    .form{
+        margin-top: -5%;
+        opacity: 1;
+    }
+    tr{
+        flex-direction: column;
+        gap:10px;
+    }
+}
